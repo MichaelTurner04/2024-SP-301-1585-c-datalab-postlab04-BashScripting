@@ -1,9 +1,9 @@
-1a.
-1b.
-2a.
-2b.
-3a.
-3b.
-4a.
-4b.
+1a."./compiley.sh program.cpp hello"
+1b.The code takes the two parameters following "compiley.sh" assigns them to variables "input" and "output". The program outputs each parameter then runs the compile command "g++ -o "$OUTPUT" "$INPUT""
+2a.You can run the program, but the compilation will not be successful.
+2b.The problem seems to occur from the program reading only "my" from "my input" and it thinks the program is just named "my", it then searches for a file named "my" and does not find it.
+3a.no
+3b.the code is taking the wrong parameters, the input for the function is reading as "$@" and the output is reading as "".
+4a.yes
+4b.it takes the whole input as the parameter.
 

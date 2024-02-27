@@ -21,4 +21,4 @@ echo "- First positional parameter (\$1) is \"$1\""
 echo "- Second positional parameter (\$2) is \"$2\""
 echo "- Joined positional parameters (\$@) is \"$@\""
 
-compile_file $@
+compile_file "$@"
