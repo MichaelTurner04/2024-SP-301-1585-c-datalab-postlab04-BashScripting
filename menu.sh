@@ -1,4 +1,3 @@
-
 for file in *
 do
 echo "v) View" $file
@@ -11,19 +10,19 @@ read input
 case $input in
 	v)
 		echo "Viewing file."
-		doThatThing $file "v"
+		doThatThing "$file" "v"
 		;;
 	e)
 		echo "Editing file."
-		doThatThing $file "e"
+		doThatThing "$file" "e"
 		;;
 	c)
 		echo "Compiling file."
-		doThatThing $file "c"
+		doThatThing "$file" "c"
 		;;
 	x)
 		echo "executing file."
-		doThatThing $file "x"
+		doThatThing "$file" "x"
 		;;
 	q)
 		echo "quitting"
@@ -35,20 +34,22 @@ case $input in
 		;;
 esac
 done
-doThatThing(file, action)
+doThatThing()
 {
+	local file="$1"
+	local action="$2"
 	case $action in
 		v)
-			less $file
+			less "$file"
 			;;
 		e)
-			nano $file
+			nano "$file"
 			;;
 		c)
-			g++ $file
+			g++ "$file"
 			;;
 		x)
-			./$file
+			./"$file"
 			;;
 	esac
 }
