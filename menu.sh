@@ -26,7 +26,7 @@ do
     echo "x) Execute $file"
     echo "q) Quit $file"
     
-    read -p "Choose an option: " input
+    read input
     
     case $input in
         v)
