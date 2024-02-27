@@ -10,15 +10,15 @@ read input
 case $input in
 	v)
 		echo "Viewing file."
-		doThatThing "$file" "v"
+		doThatThing $file "v"
 		;;
 	e)
 		echo "Editing file."
-		doThatThing "$file" "e"
+		doThatThing $file "e"
 		;;
 	c)
 		echo "Compiling file."
-		doThatThing "$file" "c"
+		doThatThing $file "c"
 		;;
 	x)
 		echo "executing file."
