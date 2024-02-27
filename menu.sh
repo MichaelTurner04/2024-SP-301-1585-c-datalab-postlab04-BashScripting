@@ -8,29 +8,29 @@ for file in *
     	read input
     	case $input in
         	v)
-            	echo "Viewing file."
-            	doThatThing "$file" "v"
-            	;;
+            		echo "Viewing file."
+            		doThatThing "$file" "v"
+            		;;
         	e)
-            	echo "Editing file."
-            	doThatThing "$file" "e"
-            	;;
+            		echo "Editing file."
+            		doThatThing "$file" "e"
+            		;;
         	c)
-            	echo "Compiling file."
-            	doThatThing "$file" "c"
-            	;;
+            		echo "Compiling file."
+            		doThatThing "$file" "c"
+            		;;
         	x)
-            	echo "Executing file."
-            	doThatThing "$file" "x"
-            	;;
+            		echo "Executing file."
+            		doThatThing "$file" "x"
+            		;;
         	q)
-            	echo "Quitting"
-            	exit
-            	;;
+            		echo "Quitting"
+            		exit
+            		;;
         	*)
-            	echo "INVALID RESPONSE"
-            	echo "Skipping this file!"
-            	;;
+            		echo "INVALID RESPONSE"
+            		echo "Skipping this file!"
+            		;;
     	esac
 done
 
