@@ -1,3 +1,4 @@
+#!/bin/bash
 doThatThing() {
     local file="$1"
     local action="$2"
